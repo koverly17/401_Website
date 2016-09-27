@@ -57,13 +57,29 @@ html, body {
 	background-image: url("BG_pic.jpg");
 }
 
-	.login{
-		width: 35%;
-		height: 36%;
-		background-color: black;
+.login{
+	width: 35%;
+	height: 36%;
+	padding-top: 5%;
+	background-color: black;
 
-	}
+}
 
-	.login h2{
-		color: white;
-	}
+.login h2{
+	color: white;
+}
+
+.about{
+	padding-top: 5%;
+	width: 45%;
+	height:	60%;
+	float: left;
+
+}
+.about h1{
+	color: white;
+}
+.about p{
+	font-size: 150%;
+	color: white;
+}
