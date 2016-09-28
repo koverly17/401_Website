@@ -62,24 +62,56 @@ html, body {
 	height: 36%;
 	padding-top: 5%;
 	background-color: black;
-
 }
 
 .login h2{
 	color: white;
 }
 
-.about{
+.about_info{
 	padding-top: 5%;
 	width: 45%;
 	height:	60%;
 	float: left;
-
 }
-.about h1{
+
+.about_info h1{
 	color: white;
 }
-.about p{
+.about_info p{
 	font-size: 150%;
 	color: white;
+}
+
+.about_photo {
+
+	padding-top: 5%;
+	width: 45%;
+	height:	76%;
+	float: right;
+}
+
+.about_photo img{
+	float: right;
+	padding-right: 5%;
+	height: 90%;
+	width: 90%;
+}
+
+.about_photo figcaption{
+	float: right;
+	padding-right: 5%;
+}
+
+.members{
+	width: 100;
+	height: 76%;
+}
+
+.members ul{
+	color: white;
+}
+.members li{
+	color: white;
+	
 }
