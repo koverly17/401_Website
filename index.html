@@ -12,24 +12,21 @@ href="mystyle.css">
 		<h1>Boise State Weight Lifting</h1>	
 	</div>
 	
-	<div class="nav">
-		<ul>
-			<li><a href="about.html">About Us</a></li>
-			<li><a href="members.html">Members</a></li>
-			<li><a href="#workouts">Workouts</a></li>
-	</div>
 	
 	<div class="middle">
 		<div class="login">
 			<h2>Connecting BSU students that share an intrest in fitness</h2>
+			<form action="" method="POST">
 			<label><br><font color="white">Username</font></br></label>
-			<input type="text" placeholder=" " name="uname" required>
+			<input id="name" placeholder=" " name="username" type="text" required>
 			
 			<label><br><font color="white">Password</font></br></label>
-			<input type="password" placeholder="" name="pswd" required>
+			<input id="password" type="password" placeholder="" name="password" required>
 			
-			<button type="submit">Login</button>
+			<input type="submit" name="submit" value="Login">
 			<a href="newmember.html">Not a member?</a> 
+			<span><?php echo $error; ?></span>
+			</form>
 		</div>
 	</div>
 	<div class="footer">
