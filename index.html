@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,16 +17,15 @@ href="mystyle.css">
 	<div class="middle">
 		<div class="login">
 			<h2>Connecting BSU students that share an intrest in fitness</h2>
-			<form action="" method="POST">
-			<label><br><font color="white">Username</font></br></label>
-			<input id="name" placeholder=" " name="username" type="text" required>
+			<form action="login.php" method="POST">
+			<label><br><font color="white">Email</font></br></label>
+			<input id="email" placeholder=" " name="email" type="text" required>
 			
 			<label><br><font color="white">Password</font></br></label>
 			<input id="password" type="password" placeholder="" name="password" required>
 			
 			<input type="submit" name="submit" value="Login">
 			<a href="newmember.html">Not a member?</a> 
-			<span><?php echo $error; ?></span>
 			</form>
 		</div>
 	</div>

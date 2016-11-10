@@ -28,7 +28,9 @@ html, body {
 	font-size: 300%;
 	font-family: verdana;
 }
-
+.title a{
+	float: right;
+}
 .nav{
 	width: 50%;
 	height: 4%;
