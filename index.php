@@ -1,8 +1,6 @@
 <?php
-	include('login.php');
-	include('Dao.php');
+	include_once("index.html");
 	if(isset($_SESSION['login_user'])){
 		header("location: about.html");
 	}
-	include_once("index.html");
  ?>
