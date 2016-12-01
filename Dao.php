@@ -29,13 +29,16 @@ class Dao{
 		$conn = $this->getConnection();
 		$getQuery = "SELECT * FROM users
 									WHERE
-									(email = :email AND password = :password)";
+									(email = :email\";
 		$q = $conn->prepare($getQuery);
 		$q->bindParam(":email", $email);
-		$q->bindParam(":password", $password);
 		$q->execute();
 		$row = $q->fetch();
-		return $row;
+		if(!$row){
+			return false;
+		}
+		$stmt = $row['password'];
+		return password_verify($password, $stmt);
 			
 	}
 	public function checkEmail($email){

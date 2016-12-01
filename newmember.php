@@ -26,6 +26,7 @@
 	}
 // To protect MySQL injection for Security purpose
 	else{
+		$password = password_hash($password, PASSWORD_BCRYPT);
 		$dao->saveInfo($email, $password);
 		header("Location: index.html");
 	}
